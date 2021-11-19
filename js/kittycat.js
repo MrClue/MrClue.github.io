@@ -50079,7 +50079,7 @@ Webflow.require("ix2").init({
       action: {
         id: "",
         actionTypeId: "GENERAL_CONTINUOUS_ACTION",
-        config: { actionListId: "a-5", affectedElements: {}, duration: 0 },
+        config: { actionListId: "a-6", affectedElements: {}, duration: 0 },
       },
       mediaQueries: ["main", "medium", "small", "tiny"],
       target: {
@@ -50096,7 +50096,7 @@ Webflow.require("ix2").init({
       ],
       config: [
         {
-          continuousParameterGroupId: "a-5-p",
+          continuousParameterGroupId: "a-6-p",
           smoothing: 50,
           startsEntering: true,
           addStartOffset: false,
@@ -50902,91 +50902,65 @@ Webflow.require("ix2").init({
           parameterLabel: "Scroll",
           continuousActionGroups: [
             {
-              keyframe: 58,
+              keyframe: 57,
               actionItems: [
                 {
                   id: "a-5-n",
-                  actionTypeId: "STYLE_TEXT_COLOR",
+                  actionTypeId: "STYLE_BACKGROUND_COLOR",
                   config: {
                     delay: 0,
                     easing: "",
                     duration: 500,
                     target: {
                       useEventTarget: "CHILDREN",
-                      selector: ".timeline_date-text",
-                      selectorGuids: ["16a3c7d0-32a0-8dda-0805-0a3fb8757975"],
+                      selector: ".timeline_circle",
+                      selectorGuids: ["20444e5c-2412-5388-2090-a8563c1517af"],
                     },
-                    globalSwatchId: "",
-                    rValue: 50,
-                    bValue: 51,
-                    gValue: 50,
+                    rValue: 65,
+                    gValue: 65,
+                    bValue: 65,
                     aValue: 1,
                   },
                 },
                 {
                   id: "a-5-n-3",
-                  actionTypeId: "STYLE_BACKGROUND_COLOR",
+                  actionTypeId: "STYLE_OPACITY",
                   config: {
                     delay: 0,
                     easing: "",
                     duration: 500,
                     target: {
                       useEventTarget: "CHILDREN",
-                      selector: ".timeline_circle",
-                      selectorGuids: ["20444e5c-2412-5388-2090-a8563c1517af"],
+                      selector: ".timeline_left",
+                      selectorGuids: ["2a8f45c6-f916-5cda-dcc9-4953d8be4085"],
                     },
-                    globalSwatchId: "",
-                    rValue: 50,
-                    bValue: 51,
-                    gValue: 50,
-                    aValue: 1,
+                    value: 0.25,
+                    unit: "",
                   },
                 },
                 {
                   id: "a-5-n-5",
-                  actionTypeId: "STYLE_TEXT_COLOR",
+                  actionTypeId: "STYLE_OPACITY",
                   config: {
                     delay: 0,
                     easing: "",
                     duration: 500,
                     target: {
                       useEventTarget: "CHILDREN",
-                      selector: ".timeline_text",
-                      selectorGuids: ["e5faa05d-a89a-1726-58f8-666edb0cd544"],
+                      selector: ".timeline_right",
+                      selectorGuids: ["c059ee09-e45b-fddf-4346-0149c4e58fe7"],
                     },
-                    globalSwatchId: "",
-                    rValue: 50,
-                    bValue: 51,
-                    gValue: 50,
-                    aValue: 1,
+                    value: 0.25,
+                    unit: "",
                   },
                 },
               ],
             },
             {
-              keyframe: 63,
+              keyframe: 60,
               actionItems: [
                 {
                   id: "a-5-n-2",
-                  actionTypeId: "STYLE_TEXT_COLOR",
-                  config: {
-                    delay: 0,
-                    easing: "",
-                    duration: 500,
-                    target: {
-                      useEventTarget: "CHILDREN",
-                      selector: ".timeline_date-text",
-                      selectorGuids: ["16a3c7d0-32a0-8dda-0805-0a3fb8757975"],
-                    },
-                    globalSwatchId: "",
-                    rValue: 255,
-                    bValue: 255,
-                    gValue: 255,
-                    aValue: 1,
-                  },
-                },
-                {
-                  id: "a-5-n-4",
                   actionTypeId: "STYLE_BACKGROUND_COLOR",
                   config: {
                     delay: 0,
@@ -50997,30 +50971,42 @@ Webflow.require("ix2").init({
                       selector: ".timeline_circle",
                       selectorGuids: ["20444e5c-2412-5388-2090-a8563c1517af"],
                     },
-                    globalSwatchId: "",
                     rValue: 255,
-                    bValue: 255,
                     gValue: 255,
+                    bValue: 255,
                     aValue: 1,
                   },
                 },
                 {
-                  id: "a-5-n-6",
-                  actionTypeId: "STYLE_TEXT_COLOR",
+                  id: "a-5-n-4",
+                  actionTypeId: "STYLE_OPACITY",
                   config: {
                     delay: 0,
                     easing: "",
                     duration: 500,
                     target: {
                       useEventTarget: "CHILDREN",
-                      selector: ".timeline_text",
-                      selectorGuids: ["e5faa05d-a89a-1726-58f8-666edb0cd544"],
+                      selector: ".timeline_left",
+                      selectorGuids: ["2a8f45c6-f916-5cda-dcc9-4953d8be4085"],
                     },
-                    globalSwatchId: "",
-                    rValue: 255,
-                    bValue: 255,
-                    gValue: 255,
-                    aValue: 1,
+                    value: 1,
+                    unit: "",
+                  },
+                },
+                {
+                  id: "a-5-n-6",
+                  actionTypeId: "STYLE_OPACITY",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".timeline_right",
+                      selectorGuids: ["c059ee09-e45b-fddf-4346-0149c4e58fe7"],
+                    },
+                    value: 1,
+                    unit: "",
                   },
                 },
               ],
@@ -51029,6 +51015,58 @@ Webflow.require("ix2").init({
         },
       ],
       createdOn: 1636294098197,
+    },
+    "a-6": {
+      id: "a-6",
+      title: "Hide Timeline at Top",
+      continuousParameterGroups: [
+        {
+          id: "a-6-p",
+          type: "SCROLL_PROGRESS",
+          parameterLabel: "Scroll",
+          continuousActionGroups: [
+            {
+              keyframe: 0,
+              actionItems: [
+                {
+                  id: "a-6-n",
+                  actionTypeId: "STYLE_OPACITY",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "61872f3305f7db53effd2dc2|c74fe70a-fd85-332e-c0ad-898246292ff4",
+                    },
+                    value: 0,
+                    unit: "",
+                  },
+                },
+              ],
+            },
+            {
+              keyframe: 1,
+              actionItems: [
+                {
+                  id: "a-6-n-2",
+                  actionTypeId: "STYLE_OPACITY",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "61872f3305f7db53effd2dc2|c74fe70a-fd85-332e-c0ad-898246292ff4",
+                    },
+                    value: 1,
+                    unit: "",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      createdOn: 1636306298097,
     },
     "a-4": {
       id: "a-4",
